@@ -3,9 +3,9 @@ import numpy as np
 import matplotlib.pyplot as plt
 import audio_metadata
 
-rate, data = wavfile.read('./sample.wav')
+rate, data = wavfile.read('./audio_samples/sample.wav')
 time = np.linspace(0, len(data)/rate, num=len(data))
-metadata = audio_metadata.load("./sample.wav")
+metadata = audio_metadata.load("./audio_samples/sample.wav")
 print(metadata)
 # Start, stop, number of points
 # stop = number of samples/sample rate
